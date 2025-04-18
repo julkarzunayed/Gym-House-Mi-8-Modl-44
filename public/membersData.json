@@ -1,0 +1,110 @@
+[
+    {
+        "month": "January",
+        "metrics": {
+            "BeginnerFitness": 78,
+            "WeightLoss": 65,
+            "MuscleGain": 72,
+            "FlexibilityMobility": 80
+        }
+    },
+    {
+        "month": "February",
+        "metrics": {
+            "BeginnerFitness": 82,
+            "WeightLoss": 60,
+            "MuscleGain": 68,
+            "FlexibilityMobility": 85
+        }
+    },
+    {
+        "month": "March",
+        "metrics": {
+            "BeginnerFitness": 74,
+            "WeightLoss": 70,
+            "MuscleGain": 76,
+            "FlexibilityMobility": 72
+        }
+    },
+    {
+        "month": "April",
+        "metrics": {
+            "BeginnerFitness": 80,
+            "WeightLoss": 64,
+            "MuscleGain": 71,
+            "FlexibilityMobility": 78
+        }
+    },
+    {
+        "month": "May",
+        "metrics": {
+            "BeginnerFitness": 85,
+            "WeightLoss": 66,
+            "MuscleGain": 74,
+            "FlexibilityMobility": 84
+        }
+    },
+    {
+        "month": "June",
+        "metrics": {
+            "BeginnerFitness": 70,
+            "WeightLoss": 72,
+            "MuscleGain": 78,
+            "FlexibilityMobility": 75
+        }
+    },
+    {
+        "month": "July",
+        "metrics": {
+            "BeginnerFitness": 76,
+            "WeightLoss": 68,
+            "MuscleGain": 80,
+            "FlexibilityMobility": 82
+        }
+    },
+    {
+        "month": "August",
+        "metrics": {
+            "BeginnerFitness": 88,
+            "WeightLoss": 74,
+            "MuscleGain": 85,
+            "FlexibilityMobility": 90
+        }
+    },
+    {
+        "month": "September",
+        "metrics": {
+            "BeginnerFitness": 79,
+            "WeightLoss": 67,
+            "MuscleGain": 73,
+            "FlexibilityMobility": 77
+        }
+    },
+    {
+        "month": "October",
+        "metrics": {
+            "BeginnerFitness": 81,
+            "WeightLoss": 71,
+            "MuscleGain": 77,
+            "FlexibilityMobility": 85
+        }
+    },
+    {
+        "month": "November",
+        "metrics": {
+            "BeginnerFitness": 75,
+            "WeightLoss": 69,
+            "MuscleGain": 70,
+            "FlexibilityMobility": 74
+        }
+    },
+    {
+        "month": "December",
+        "metrics": {
+            "BeginnerFitness": 83,
+            "WeightLoss": 73,
+            "MuscleGain": 81,
+            "FlexibilityMobility": 87
+        }
+    }
+]

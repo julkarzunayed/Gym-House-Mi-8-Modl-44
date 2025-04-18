@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const activityData = [
@@ -166,7 +166,29 @@ const workoutData = [
 
 
 
-const MembersActivityLineChart = () => {
+const MembersActivityLineChart = ({membersPromise}) => {
+    const membersDataRes = use(membersPromise)
+    const membersWorkoutData = membersDataRes.data;
+    
+    //data processing for the chart 
+    const membersChartData = membersWorkoutData.map((memberData, index) => {
+        const member = {
+            id: index,
+            month: memberData.month,
+            BeginnerFitness: memberData.metrics.BeginnerFitness,
+            FlexibilityMobility: memberData.metrics.FlexibilityMobility,
+            MuscleGain: memberData.metrics.MuscleGain,
+            WeightLoss: memberData.metrics.WeightLoss
+        }
+        const avg = (member.BeginnerFitness + member.FlexibilityMobility + member.MuscleGain + member.WeightLoss) / 4;
+
+        member.avg = avg;
+
+        return member;
+    })
+
+    console.log(membersChartData)
+    
     return (
         <div className='mt-16 bg-blue-200 p-8 rounded-2xl'>
             <h1 className='text-5xl font-bold text-center mb-16'>Our Member Activity Chart</h1>
@@ -186,6 +208,22 @@ const MembersActivityLineChart = () => {
                 </ResponsiveContainer>
 
                 <ResponsiveContainer style={{"border": "dashed 3px deepSkyBlue"}} width="100%" height={500}>
+                    <BarChart height={300} width={500} data={membersChartData}>
+                        <CartesianGrid strokeDasharray={"3 3"} stroke='#fff'></CartesianGrid>
+                        <XAxis dataKey={"month"}></XAxis>
+                        <YAxis></YAxis>
+                        <Tooltip></Tooltip>
+                        <Legend></Legend>
+                        <Bar dataKey={"avg"} fill='peru' ></Bar>
+                        <Bar dataKey={"BeginnerFitness"} fill='blue' ></Bar>
+                        <Bar dataKey={"WeightLoss"} fill='orange' ></Bar>
+                        <Bar dataKey={"MuscleGain"} fill='gray' ></Bar>
+                        <Bar dataKey={"FlexibilityMobility"} fill='tomato' ></Bar>
+
+                    </BarChart>
+                </ResponsiveContainer>
+
+                {/* <ResponsiveContainer style={{"border": "dashed 3px deepSkyBlue"}} width="100%" height={500}>
                     <BarChart height={300} width={500} data={workoutData}>
                         <CartesianGrid strokeDasharray={"3 3"} stroke='#fff'></CartesianGrid>
                         <XAxis dataKey={"month"}></XAxis>
@@ -198,7 +236,7 @@ const MembersActivityLineChart = () => {
                         <Bar dataKey={"FlexibilityMobility"} fill='tomato' ></Bar>
 
                     </BarChart>
-                </ResponsiveContainer>
+                </ResponsiveContainer> */}
 
             </div>
         </div>

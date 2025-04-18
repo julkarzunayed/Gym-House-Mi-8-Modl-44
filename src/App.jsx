@@ -6,10 +6,13 @@ import NavBar from './components/NavBar/NavBar'
 import PricingOptions from './components/PricingOptions/PricingOptions';
 import WorkoutPlans from './components/WorkoutPlans/WorkoutPlans';
 import MembersActivityLineChart from './components/MembersActivityLineChart/MembersActivityLineChart';
+import axios from 'axios';
 
 const pricingData = fetch("./pricingData.json").then(res => res.json());
 
 const workoutProps = fetch("./workoutPlans.json").then(res => res.json());
+
+const membersPromise = axios.get("./membersData.json")
 
 function App() {
 
@@ -32,7 +35,9 @@ function App() {
           <WorkoutPlans workoutProps={workoutProps}></WorkoutPlans>
         </Suspense>
 
-        <MembersActivityLineChart></MembersActivityLineChart>
+        <Suspense>
+        <MembersActivityLineChart membersPromise={membersPromise}></MembersActivityLineChart>
+        </Suspense>
       </main>
     </>
   )
