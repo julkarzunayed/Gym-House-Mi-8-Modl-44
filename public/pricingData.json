@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "name": "Starter Plan",
+      "price": "$29/month",
+      "description": "Perfect for beginners who want to stay active and healthy without breaking the bank.",
+      "features": [
+        "Access to gym facilities during off-peak hours",
+        "1 personal training session per month",
+        "Group fitness classes (basic)",
+        "Standard locker access",
+        "Free parking"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pro Plan",
+      "price": "$59/month",
+      "description": "Ideal for fitness enthusiasts looking for flexibility and enhanced services.",
+      "features": [
+        "24/7 gym access",
+        "4 personal training sessions per month",
+        "Group fitness classes (advanced)",
+        "Premium locker with towel service",
+        "Nutrition plan consultation",
+        "Access to sauna and steam rooms"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Elite Plan",
+      "price": "$99/month",
+      "description": "Designed for professionals who want an all-inclusive gym experience.",
+      "features": [
+        "Unlimited gym access with VIP amenities",
+        "8 personal training sessions per month",
+        "Access to all fitness classes",
+        "Dedicated personal locker",
+        "Customized nutrition and fitness plan",
+        "Spa and recovery services",
+        "Priority booking for trainers and classes",
+        "Complimentary fitness gear"
+      ]
+    }
+  ]
+  
