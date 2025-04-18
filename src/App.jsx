@@ -16,8 +16,10 @@ function App() {
         <NavBar></NavBar>
         {/* <DaisyNav></DaisyNav> */}
       </header>
-      <main>
-        <Suspense >
+      <main className='container mx-auto'>
+        <Suspense fallback={<div className='flex justify-center' >
+          <span className="loading loading-infinity loading-xl "></span>
+        </div>}>
           <PricingOptions pricingData={pricingData}></PricingOptions>
         </Suspense>
       </main>
