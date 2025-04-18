@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "popular": false,
+      "name": "Beginner Fitness Plan",
+      "description": "A foundational program for newcomers to build strength, improve endurance, and learn proper form.",
+      "features": [
+        "3 days a week",
+        "Full-body workouts",
+        "Basic equipment required",
+        "Focus on form and stability"
+      ],
+      "price": "Free",
+      "duration": "4 weeks",
+      "img": "https://example.com/images/beginner-plan.jpg"
+    },
+    {
+      "id": 2,
+      "popular": true,
+      "name": "Weight Loss Program",
+      "description": "A high-intensity plan designed to maximize calorie burn and support weight loss goals.",
+      "features": [
+        "5 days a week",
+        "Cardio and strength training mix",
+        "Includes diet suggestions",
+        "Progress tracking",
+        "Online support group access",
+        "Weekly check-ins with a trainer",
+        "Customized calorie deficit plan"
+      ],
+      "price": "$29.99",
+      "duration": "8 weeks",
+      "img": "https://example.com/images/weight-loss-plan.jpg"
+    },
+    {
+      "id": 3,
+      "popular": false,
+      "name": "Muscle Gain Plan",
+      "description": "An advanced plan focused on hypertrophy and increasing muscle mass effectively.",
+      "features": [
+        "4 days a week",
+        "Split workout routine",
+        "Barbell and dumbbell exercises",
+        "Nutrition guidance",
+        "Strength progression tracking",
+        "Supplement recommendations",
+        "Personalized workout adjustments"
+      ],
+      "price": "$39.99",
+      "duration": "6 weeks",
+      "img": "https://example.com/images/muscle-gain-plan.jpg"
+    },
+    {
+      "id": 4,
+      "popular": true,
+      "name": "Flexibility & Mobility Plan",
+      "description": "A yoga-based routine aimed at improving flexibility, balance, and overall joint health.",
+      "features": [
+        "2 days a week",
+        "Yoga and stretching sessions",
+        "Improves posture and reduces stress",
+        "No equipment needed"
+      ],
+      "price": "$19.99",
+      "duration": "4 weeks",
+      "img": "https://example.com/images/flexibility-plan.jpg"
+    }
+  ]
+  

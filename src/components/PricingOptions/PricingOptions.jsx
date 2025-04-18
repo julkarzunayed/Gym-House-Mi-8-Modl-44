@@ -5,7 +5,7 @@ import PricingCard from '../PricingCard/PricingCard';
 
 const PricingOptions = ({ pricingData }) => {
     const pricingPromise = use(pricingData)
-        console.log(pricingPromise)
+        // console.log(pricingPromise)
     return (
         <div>
             <h2 className='text-5xl text-center font-bold mt-16'>Get Our Membership</h2>
