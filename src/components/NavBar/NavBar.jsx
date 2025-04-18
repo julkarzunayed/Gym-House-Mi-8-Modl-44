@@ -42,7 +42,7 @@ const NavBar = () => {
 
 
   return (
-    <nav className='flex justify-between p-4'>
+    <nav className='flex justify-between p-4 border border-green-200'>
       <div className="flex gap-4">
         <span
           className='md:hidden'

@@ -5,13 +5,14 @@ import DaisyNav from './components/DaisyNav/DaisyNav'
 import NavBar from './components/NavBar/NavBar'
 import PricingOptions from './components/PricingOptions/PricingOptions';
 import WorkoutPlans from './components/WorkoutPlans/WorkoutPlans';
+import MembersActivityLineChart from './components/MembersActivityLineChart/MembersActivityLineChart';
 
 const pricingData = fetch("./pricingData.json").then(res => res.json());
 
 const workoutProps = fetch("./workoutPlans.json").then(res => res.json());
 
 function App() {
-  
+
 
   return (
     <>
@@ -25,9 +26,13 @@ function App() {
         </div>}>
           <PricingOptions pricingData={pricingData}></PricingOptions>
         </Suspense>
-        <Suspense>
+        <Suspense fallback={<div className='flex justify-center' >
+          <span className="loading loading-infinity loading-xl "></span>
+        </div>}>
           <WorkoutPlans workoutProps={workoutProps}></WorkoutPlans>
         </Suspense>
+
+        <MembersActivityLineChart></MembersActivityLineChart>
       </main>
     </>
   )
