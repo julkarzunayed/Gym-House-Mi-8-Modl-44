@@ -8,7 +8,7 @@ const WorkoutCart = ({ data }) => {
                 { popular && <span className="badge badge-xs badge-warning">Most Popular</span>}
                 <div className="flex justify-between">
                     <h2 className="text-3xl font-bold">{name}</h2>
-                    <span className="text-xl text-amber-500 font-bold">{price}</span>
+                    <span className="text-3xl text-amber-500 font-bold">{price}</span>
                     
                 </div>
                 <h2 className='text-3xl font-bold text-amber-500'>{duration}</h2>

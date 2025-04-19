@@ -13,23 +13,23 @@ const navigationData = [
   },
   {
     "id": 2,
-    "name": "About",
-    "url": "/about"
+    "name": "Membership-Plan",
+    "url": "/membership-plan"
   },
   {
     "id": 3,
-    "name": "Services",
-    "url": "/services"
+    "name": "Workout-Plan",
+    "url": "/workout-plan"
   },
   {
     "id": 4,
-    "name": "Contact",
-    "url": "/contact"
+    "name": "Activity",
+    "url": "/activity"
   },
   {
     "id": 5,
     "name": "Blog",
-    "url": "/blog"
+    "url": "/activity"
   }
 ]
 
@@ -42,7 +42,7 @@ const NavBar = () => {
 
 
   return (
-    <nav className='flex justify-between p-4 border border-green-200'>
+    <nav className='flex w-full justify-between p-4 border border-green-200 text-white fixed top-0 bg-gray-600'>
       <div className="flex gap-4">
         <span
           className='md:hidden'
@@ -51,12 +51,16 @@ const NavBar = () => {
             menuOpen ? <X></X> : <Menu></Menu>
           }
         </span>
-        <ul className={`${menuOpen? "top-9": "-top-50"} absolute left-8 duration-500 bg-amber-300 text-black p-3 rounded-xl`}>
+        <ul className={`${menuOpen ? "top-9" : "-top-50"} absolute left-8 duration-500 bg-amber-300 text-black p-3 rounded-xl`}>
           {
             lists
           }
         </ul>
-        <h3>My NavBar</h3>
+        <h3
+          className='text-2xl md:text-3xl font-bold'>Gym
+          <span className='text-green-500 font-black'>H</span>
+          ouse
+        </h3>
       </div>
       <ul className=' md:flex hidden gap-5'>
         {

@@ -7,6 +7,8 @@ import PricingOptions from './components/PricingOptions/PricingOptions';
 import WorkoutPlans from './components/WorkoutPlans/WorkoutPlans';
 import MembersActivityLineChart from './components/MembersActivityLineChart/MembersActivityLineChart';
 import axios from 'axios';
+import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
 
 const pricingData = fetch("./pricingData.json").then(res => res.json());
 
@@ -22,6 +24,7 @@ function App() {
       <header>
         <NavBar></NavBar>
         {/* <DaisyNav></DaisyNav> */}
+        <Banner></Banner>
       </header>
       <main className='container mx-auto'>
         <Suspense fallback={<div className='flex justify-center' >
@@ -39,6 +42,9 @@ function App() {
         <MembersActivityLineChart membersPromise={membersPromise}></MembersActivityLineChart>
         </Suspense>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   )
 }

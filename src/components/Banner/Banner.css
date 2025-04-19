@@ -1,0 +1,7 @@
+.banner-container{
+    background-image: url("../../assets/trees02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* linear-gradient(#00000010 to #00000010 ); */
+}
